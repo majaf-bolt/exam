@@ -22,6 +22,7 @@ function calculate() {
     document.getElementById('leadPct').textContent = leadPct + '%';
     document.getElementById('customerPct').textContent = customerPct + '%';
 
+// Стари:
     document.getElementById('prospectBar').style.width = '100%';
     document.getElementById('leadBar').style.width = leadPct + '%';
     document.getElementById('customerBar').style.width = customerPct + '%';
