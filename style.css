@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1a1f2e;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.app {
+    display: grid;
+    grid-template-columns: 220px 1fr 200px;
+    height: 100vh;
+    gap: 15px;
+    padding: 15px;
+}
+
+.sidebar {
+    background-color: #242938;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    overflow-y: auto;
+}
+
+.logo {
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+}
+
+.logo-icon { color: #4a9eff; }
+
+label {
+    font-size: 11px;
+    color: #aaaaaa;
+    margin-top: 4px;
+}
+
+select, input[type="date"], input[type="number"] {
+    width: 100%;
+    background-color: #1a1f2e;
+    color: #ffffff;
+    border: 1px solid #3a3f50;
+    border-radius: 6px;
+    padding: 6px;
+    font-size: 12px;
+}
+
+.input-prefix {
+    display: flex;
+    align-items: center;
+    background-color: #1a1f2e;
+    border: 1px solid #3a3f50;
+    border-radius: 6px;
+    padding: 0 8px;
+}
+
+.input-prefix span { color: #aaaaaa; margin-right: 5px; font-size: 12px; }
+.input-prefix input { border: none; background: transparent; padding: 6px 0; color: white; width: 100%; }
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.chart-area {
+    background-color: #242938;
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1;
+    overflow-y: auto;
+}
+
+.sliders {
+    background-color: #242938;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.sliders label { color: #cccccc; font-size: 12px; }
+
+input[type="range"] {
+    width: 100%;
+    accent-color: #888888;
+    cursor: pointer;
+}
+
+.slider-val {
+    text-align: right;
+    font-size: 12px;
+    color: #aaaaaa;
+}
+
+.stats {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.stat-card {
+    background-color: #242938;
+    border-radius: 10px;
+    padding: 15px;
+    flex: 1;
+}
+
+.stat-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #aaaaaa;
+    margin-bottom: 8px;
+}
+
+.stat-number {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    background-color: #3a3f50;
+    border-radius: 4px;
+    height: 5px;
+}
+
+.progress {
+    background-color: #aaaaaa;
+    height: 5px;
+    border-radius: 4px;
+    transition: width 0.3s;
+}

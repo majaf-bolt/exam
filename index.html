@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeadPredictor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <span class="logo-icon">▼</span>
+                <span><strong>Lead</strong>Predictor</span>
+            </div>
+
+            <label>Language</label>
+            <select id="language">
+                <option>🇺🇸 English</option>
+            </select>
+
+            <label>Currency</label>
+            <select id="currency">
+                <option>$ US Dollar</option>
+            </select>
+
+            <label>Campaign Start</label>
+            <input type="date" id="startDate" value="2026-05-08">
+
+            <label>Campaign End</label>
+            <input type="date" id="endDate" value="2026-11-04">
+
+            <label>Total Revenue</label>
+            <div class="input-prefix">
+                <span>$</span>
+                <input type="number" id="revenue" value="10000">
+            </div>
+
+            <label>Avg. Order Value</label>
+            <div class="input-prefix">
+                <span>$</span>
+                <input type="number" id="avgOrder" value="1000">
+            </div>
+        </aside>
+
+        <!-- Main content -->
+        <main class="main">
+            <div class="chart-area" id="chartArea"></div>
+
+            <div class="sliders">
+                <label>Lead Response Rate</label>
+                <input type="range" id="leadRate" min="1" max="100" value="40">
+                <span id="leadRateVal">40.00%</span>
+
+                <label>Prospect Response Rate</label>
+                <input type="range" id="prospectRate" min="1" max="100" value="20">
+                <span id="prospectRateVal">20.00%</span>
+            </div>
+        </main>
+
+        <!-- Stats -->
+        <aside class="stats">
+            <div class="stat-card">
+                <div class="stat-header">📁 Prospects <span id="prospectPct">100%</span></div>
+                <div class="stat-number" id="prospectNum">125</div>
+                <div class="progress-bar"><div class="progress" id="prospectBar" style="width:100%"></div></div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-header">👤 Leads <span id="leadPct">20%</span></div>
+                <div class="stat-number" id="leadNum">25</div>
+                <div class="progress-bar"><div class="progress" id="leadBar" style="width:20%"></div></div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-header">🏆 Customers <span id="customerPct">8%</span></div>
+                <div class="stat-number" id="customerNum">10</div>
+                <div class="progress-bar"><div class="progress" id="customerBar" style="width:8%"></div></div>
+            </div>
+        </aside>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
